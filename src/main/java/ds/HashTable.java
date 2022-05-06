@@ -1,13 +1,13 @@
 package ds;
 
 public class HashTable<K, V> {
-    private static int INITIAL_CAPACITY = 16;
+    private static int INITIAL_CAPACITY = 8;
     private Entry<K, V>[] table;
     private int size;
     
     @SuppressWarnings("unchecked")
     public HashTable() {
-        table = (Entry<K, V>[]) new Object[INITIAL_CAPACITY];
+        table = (Entry<K, V>[]) new Entry[INITIAL_CAPACITY];
         size = 0;
     }
     
